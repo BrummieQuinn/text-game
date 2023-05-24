@@ -2,6 +2,8 @@
 
 Text-based choose your own adventure with simple A/B choices
 
+***
+
 ### Game start:
 
 - Start on index.html
@@ -14,6 +16,7 @@ Text-based choose your own adventure with simple A/B choices
 
 - links: start your adventure! - possibly as a button if I have time
 
+***
 
 ### Choice 1 - Choose your character:
 
@@ -26,7 +29,9 @@ A. Rogue or B. Necromancer?
   - If you choose Necromancer, you can summon undead minions to fight for you, but you have to deal with the smell and the moral implications. You hope to find some secrets in the mansion, or at least some new allies. 
     - Links: Return and Next
 
-  ### Choice 2:
+***
+
+### Choice 2:
 
 - As you enter the mansion, you see a dusty hallway with two doors.
 
@@ -38,6 +43,8 @@ Each door has a sign that seems to warn you of something. Which one do you choos
 
 - links: Previous, Choose left, Choose right
 - provide a link to return to start?
+
+***
 
 ### Choice 3:
 
@@ -54,5 +61,5 @@ It begins to rapidly make its way towards you.
 Unable to reach your weapons, you nod to yourself, you close your eyes as you realise you'll never know who sent the letter now - END
 links: Return to start
 
-
+***
 
