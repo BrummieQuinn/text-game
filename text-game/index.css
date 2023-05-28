@@ -62,6 +62,7 @@ h2 {
     display: flex;
     margin: 0px;
     text-align: center;
+    
 }
 
 a { 
@@ -83,7 +84,9 @@ a {
 a:focus {
     background-color: hsl(7, 84%, 30%);
     color: hsl(0, 0%, 100%);
-    outline-color: hsl(7, 84%, 30%) ;
+    outline-color: hsl(7, 84%, 30%);
+    border-radius: 9px;
+    
 }
 
 .button {
@@ -92,7 +95,8 @@ a:focus {
     flex-flow: column wrap;
     align-content: stretch;
     align-items: center;
-
+    width: 115px;
+    height: 50px;
     margin: 0;
 }
 
@@ -107,7 +111,7 @@ a:focus {
     width: 115px;
     height: 50px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-radius: 10px;
     border:solid 1px hsl(4, 95%, 43%);
     background:hsl(4, 95%, 43%);
