@@ -4,10 +4,10 @@ body {
     flex-flow: column wrap;
     align-content: space-around;
     align-items: center;
-    background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(4, 95%, 43%), hsl(6, 89%, 37%), hsl(7, 84%, 30%), hsl(9, 79%, 23%), hsl(13, 78%, 16%), hsl(19, 78%, 9%), hsl(0, 0%, 0%));
-    background-size: 800% 800%;
+    background: linear-gradient(to right, hsl(0, 0%, 0%), hsl(4, 95%, 43%), hsl(6, 89%, 37%), hsl(7, 84%, 30%), hsl(9, 79%, 23%), hsl(13, 78%, 16%), hsl(19, 78%, 9%), hsl(0, 0%, 0%));
+    background-size: 500% 500%;
     animation: gradient 5s ease-in-out infinite;
-    color: white;
+    color: hsl(0, 0%, 100%);
     overflow: hidden;
     font-family:cursive;
     font-size: 25px;
@@ -25,4 +25,39 @@ body {
         background-position: left;
     } 
 }
+
+
+
+a {box-sizing: border-box;
+
+    display: block;
+    width: 115px;
+    height: 50px;
+    background-color:hsl(4, 95%, 43%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    line-height: 25px;
+    text-decoration: none;
+    text-transform:uppercase;
+    box-shadow: 0 5px 0 hsl(19, 78%, 9%);
+    cursor: pointer;
+    
+}
+
+a:hover {
+
+    background-color: hsl(7, 84%, 30%);
+
+}
+
+a:active {
+
+    background-color: hsl(13, 78%, 16%);
+
+}
+
 
