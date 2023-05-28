@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    margin: 0;
+    flex-flow: column wrap;
+    align-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(4, 95%, 43%), hsl(6, 89%, 37%), hsl(7, 84%, 30%), hsl(9, 79%, 23%), hsl(13, 78%, 16%), hsl(19, 78%, 9%), hsl(0, 0%, 0%));
+    background-size: 800% 800%;
+    animation: gradient 5s ease-in-out infinite;
+    color: white;
+    overflow: hidden;
+    font-family:cursive;
+    font-size: 25px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: left;
+
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    } 
+}
+
