@@ -1,18 +1,26 @@
+html {
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+    align-items: stretch;
+    align-content: stretch;
+}
+
 body {
     display: flex;
-    margin: 0;
+    margin: 8px;
     flex-flow: column wrap;
     align-content: space-around;
     align-items: center; 
-    background: linear-gradient(to right, hsl(0, 0%, 0%), hsl(6, 89%, 37%), hsl(7, 84%, 30%), hsl(9, 79%, 23%), hsl(13, 78%, 16%), hsl(19, 78%, 9%), hsl(0, 0%, 0%));
+    background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(6, 89%, 37%), hsl(7, 84%, 30%), hsl(9, 79%, 23%), hsl(13, 78%, 16%), hsl(19, 78%, 9%), hsl(0, 0%, 0%));
     background-size: 500% 500%;
     animation: gradient 5s ease-in-out infinite;
     color: hsl(0, 0%, 100%);
-    overflow: hidden;
     font-family:cursive;
     font-size: 25px;
+    
 }
-
+/*background animation*/
 @keyframes gradient {
     0% {
         background-position: left;
@@ -51,7 +59,7 @@ main {
     box-sizing: border-box;
     display: flex;
     flex-flow: column wrap;
-    margin: 0px;
+    margin-top: 50px;
     align-items: center;
 
 }
@@ -60,7 +68,8 @@ h2 {
 
     box-sizing: border-box;
     display: flex;
-    margin: 0px;
+    flex-flow: column wrap;
+    margin-top: 70px;
     text-align: center;
     
 }
@@ -77,16 +86,45 @@ a {
     padding: .1em; 
     margin: -.1em; 
     border:solid 1px hsl(4, 95%, 43%);
-    
+    font-size: 25px;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
 
 }
+/*start button text glow effect*/
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px hsl(0, 0%, 100%),
+                   0 0 20px hsl(0, 0%, 100%),
+                   0 0 30px hsl(0, 0%, 100%),
+                   0 0 40px hsl(0, 0%, 100%),
+                   0 0 70px hsl(0, 0%, 100%),
+                   0 0 80px hsl(0, 0%, 100%),
+                   0 0 100px hsl(0, 0%, 100%),
+                   0 0 150px hsl(0, 0%, 100%);
+      }
+      to {
+        text-shadow: none;
+      }
+  }
 
-a:focus {
+a:focus-visible {
+
+    background-color: hsl(7, 84%, 30%);
+    color: hsl(0, 0%, 100%);
+    border-color: hsl(7, 84%, 30%);
+    border-radius: 9px;
+
+    
+}
+
+a:hover {
+
     background-color: hsl(7, 84%, 30%);
     color: hsl(0, 0%, 100%);
     outline-color: hsl(7, 84%, 30%);
     border-radius: 9px;
-    
+    cursor: pointer; 
 }
 
 .button {
@@ -115,11 +153,7 @@ a:focus {
     border-radius: 10px;
     border:solid 1px hsl(4, 95%, 43%);
     background:hsl(4, 95%, 43%);
-    text-align:center;
     font-weight: bolder;
-    padding:14px 16px 12px;
-    color: hsl(0, 0%, 100%);
-    margin: 0;
   
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
@@ -141,21 +175,7 @@ a:focus {
 
 
     
-   /* 
-    background-color:hsl(4, 95%, 43%);
-    color: hsl(0, 0%, 100%);
-    
-    padding: 10px;
-    text-align: center;
-    letter-spacing: .1rem;
-    border-radius: 10px;
-    position: relative;
-    line-height: 25px;
-    text-decoration: none;
-    text-transform:uppercase;
-    box-shadow: 0 5px 0 hsl(9, 79%, 23%);
-    cursor: pointer;
-    perspective: -200px -200px;*/
+ 
 
     
 
