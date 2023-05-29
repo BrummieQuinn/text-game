@@ -172,7 +172,13 @@ a:hover {
     top: 4px;
   }
 
+  /*for accessibility*/
 
+  @media screen and (prefers-reduced-motion: reduce) {
+    .animate {
+      animation: none !important;
+    }
+  }
 
     
  
